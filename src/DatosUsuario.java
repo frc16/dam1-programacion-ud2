@@ -4,26 +4,26 @@ import utilidades.Usuario;
 
 public class DatosUsuario {
 
-    public static void main(String[] args) {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.print("nombre:");
+    String nombre = sc.nextLine();
 
-        Scanner sc = new Scanner(System.in);
-        String nombre = sc.nextLine();
-        int edad = sc.nextInt();
-        sc.nextLine();
-        String correo = sc.nextLine();
-        sc.nextLine();
-        boolean emailValido = ProcesadorTexto.esEmailValido(correo);
-        if (emailValido) {
+    System.out.print("edad:");
+    int edad = sc.nextInt();
+    sc.nextLine();
 
-            Usuario usuario = new Usuario(nombre, edad, correo);
-            usuario.mostrarInformacion();
+    System.out.print("correo:");
+    String correo = sc.nextLine();
 
-        } else {
+    boolean correoValido = ProcesadorTexto.esEmailValido(correo);
 
-            System.out.println("El usuario no puede ser creado porque el email introducido no es valido");
+    if (correoValido) {
+      Usuario usuario = new Usuario(nombre, edad, correo);
 
-        }
+    } else {
+      System.out.println("El usuario no puede ser creado porque el email introducido no es válido");
 
-        sc.close();
     }
+  }
 }
