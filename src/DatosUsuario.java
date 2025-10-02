@@ -17,7 +17,7 @@ public class DatosUsuario {
     System.out.print("correo:");
     String correo = sc.nextLine();
 
-    boolean emailValido = ProcesadorTexto.esEmailValido(correo);
+    boolean correoValido = ProcesadorTexto.esEmailValido(correo);
     boolean edadValida = edad < 0 || edad > 120;
 
     if (correoValido && edadValida) {
@@ -26,12 +26,10 @@ public class DatosUsuario {
     } else {
       System.out.println("El usuario no puede ser creado porque el email introducido no es válido");
       // No se si esto era lo que pedia con la edad
-      
 
       String name = "samuel";
       System.out.println("El nombre es: " + name.substring(0, 1).toUpperCase() + name.substring(1).toLowerCase());
 
-      
     }
     sc.close();
   }
