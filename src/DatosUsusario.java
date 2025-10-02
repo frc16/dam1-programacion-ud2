@@ -17,12 +17,15 @@ public class DatosUsusario {
       String correo = sc.nextLine();
 
       boolean correoValido = ProcesadorTexto.esEmailValido(correo);
+      boolean edadValida = edad < 0 || edad > 120;
 
      if(correoValido){ Usuario usuario = new Usuario(nombre, edad, correo);
-     } else {
-        if(edad <= 0){ System.out.println("error");
-          } else System.out.println("error"); 
+     } else { System.out.println("error, esuario no es valido");
+
+     String name = "frank";
+        
     }
+    sc.close();
     }
      
 }
