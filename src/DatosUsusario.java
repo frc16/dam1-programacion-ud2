@@ -18,8 +18,9 @@ public class DatosUsusario {
 
         boolean correoValido = ProcesadorTexto.esEmailValido(correo);
         boolean edadValida = edad < 0 || edad > 120;
+        boolean nombreValido = nombre.length() < 2 && nombre.length() > 20;
 
-        if (correoValido) {
+        if (correoValido && edadValida && nombreValido) {
             Usuario usuario = new Usuario(nombre, edad, correo);
         } else {
             System.out.println("error, esuario no es valido");
