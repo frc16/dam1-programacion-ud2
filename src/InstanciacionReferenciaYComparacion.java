@@ -12,6 +12,10 @@ public class InstanciacionReferenciaYComparacion {
 
         // Tu código aquí ↓
 
+        Cancion c1 = new Cancion();
+        Cancion c2 = new Cancion("Clocks", "Coldplay");
+        System.out.println(c1);
+        System.out.println(c2);
         // ================================
         // EJERCICIO 2: Comparación con ==
         // ================================
@@ -19,6 +23,9 @@ public class InstanciacionReferenciaYComparacion {
         // 2. Imprime el resultado de (c3 == c4).
 
         // Tu código aquí ↓
+        Cancion c3 = new Cancion("Vive", 20);
+        Ccancion c4 = new Cancion("Vive", 20);
+        System.out.println(c3 == c4);
 
         // ================================
         // EJERCICIO 3: Comparación con equals()
@@ -27,6 +34,8 @@ public class InstanciacionReferenciaYComparacion {
         // imprime el resultado de (c3.equals(c4)).
 
         // Tu código aquí ↓
+
+        System.out.println(c3.equals(c4));
 
         // ================================
         // EJERCICIO 4: Comparación en Pelicula
@@ -37,6 +46,10 @@ public class InstanciacionReferenciaYComparacion {
         // 4. Imprime (p1.equals(p2)).
 
         // Tu código aquí ↓
+        Pelicula p1 = new Pelicula("Rambo", 2002);
+        Pelicula p2 = new Pelicula("Rambo", 2002);
+        System.out.println(p1 == p2);
+        System.out.printl(p1.equals(p2));
 
         // ================================
         // EJERCICIO 5: Referencias
@@ -49,6 +62,9 @@ public class InstanciacionReferenciaYComparacion {
         // 5. Imprime c5 de nuevo.
 
         // Tu código aquí ↓
+        Cancion c5 = new Cancion("Levels", 2011);
+        Cancion c6 = c5;
+        System.out.print(c5 == c6);
 
         // ================================
         // EJERCICIO 6: null
