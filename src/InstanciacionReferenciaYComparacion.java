@@ -1,3 +1,6 @@
+import utilidades.Cancion;
+import utilidades.Pelicula;
+
 public class InstanciacionReferenciaYComparacion {
     public static void main(String[] args) {
 
@@ -23,8 +26,8 @@ public class InstanciacionReferenciaYComparacion {
         // 2. Imprime el resultado de (c3 == c4).
 
         // Tu código aquí ↓
-        Cancion c3 = new Cancion("Vive", 20);
-        Ccancion c4 = new Cancion("Vive", 20);
+        Cancion c3 = new Cancion("Vive", "PEPITO");
+        Cancion c4 = new Cancion("Vive", "PEPITO");
         System.out.println(c3 == c4);
 
         // ================================
@@ -49,7 +52,7 @@ public class InstanciacionReferenciaYComparacion {
         Pelicula p1 = new Pelicula("Rambo", 2002);
         Pelicula p2 = new Pelicula("Rambo", 2002);
         System.out.println(p1 == p2);
-        System.out.printl(p1.equals(p2));
+        System.out.println(p1.equals(p2));
 
         // ================================
         // EJERCICIO 5: Referencias
@@ -62,7 +65,7 @@ public class InstanciacionReferenciaYComparacion {
         // 5. Imprime c5 de nuevo.
 
         // Tu código aquí ↓
-        Cancion c5 = new Cancion("Levels", 2011);
+        Cancion c5 = new Cancion("Levels", "    Avicii");
         Cancion c6 = c5;
         System.out.print(c5 == c6);
 
@@ -75,6 +78,7 @@ public class InstanciacionReferenciaYComparacion {
         // Comenta la línea después de probar, porque lanzará un error.
 
         // Tu código aquí ↓
+        Pelicula p3 = null;
 
     }
 
@@ -83,24 +87,29 @@ public class InstanciacionReferenciaYComparacion {
     // ================================
     // Ejercicio 1: ¿Qué diferencia hay entre el constructor por defecto y el
     // parametrizado?
-    // Respuesta: ...
+    // Respuesta: ... //la pricipal diferencia es la opcion de imprimir en pantalla
+    // un titulo ya guardado en el codigo.
 
     // Ejercicio 2: ¿Por qué da false al comparar con == dos objetos con los mismos
     // datos?
-    // Respuesta: ...
+    // Respuesta: ...// porque al usar "new" en cada objeto, se considera objetos
+    // nuevos y diferentes entre si, aun si comparten caracteristicas.
 
     // Ejercicio 3: ¿Qué diferencia hay entre == y equals()? ¿Por qué ahora sí
     // devuelve true?
-    // Respuesta: ...
+    // Respuesta: ...//en equeal(), la comparacion se peude sobreescribir, en "=="
+    // no.
 
     // Ejercicio 4: ¿Por qué en Pelicula equals no funciona como en Cancion?
-    // Respuesta: ...
+    // Respuesta: ... // ahi sin no se! :v
 
     // Ejercicio 5: ¿Qué ocurre cuando modificas el objeto a través de c6? ¿Qué
     // demuestra?
-    // Respuesta: ...
+    // Respuesta: ... // que al darle equidad tanto a c5 y c6, ambos comparten las
+    // mismas caractersticas.
 
     // Ejercicio 6: ¿Qué error aparece al acceder a un método de p3 siendo null?
     // ¿Qué significa realmente que una variable valga null?
-    // Respuesta: ...
+    // Respuesta: ... probablemnete sea un objeto sin categoria o nombre o vacio
+    // sinceramente no estoy seguro.
 }
