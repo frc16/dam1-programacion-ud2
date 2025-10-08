@@ -15,7 +15,7 @@ public class TrabajandoConMetodos {
         System.out.println("Hola");
 
         String nombre = ("franklin");
-        System.out.println("Hola " + nombre + " !");
+        System.out.println("Hola " + nombre + "!");
 
         // ================================
         // EJERCICIO 2: Métodos con retorno
@@ -37,6 +37,7 @@ public class TrabajandoConMetodos {
         // 2. Llama a method.incrementar(n).
         // 3. Imprime n después de llamar al método.
         // Tu código aquí ↓
+        int n = 10;
 
         // ================================
         // EJERCICIO 4: Paso por referencia (objetos)
@@ -47,6 +48,7 @@ public class TrabajandoConMetodos {
         // 2. Llama a method.cambiarTitulo(cancion).
         // 3. Imprime la canción después.
         // Tu código aquí ↓
+        Cancion cancion = new Cancion("levels", "avicii");
 
     }
 }
