@@ -43,7 +43,7 @@ public class GestorTareas {
         // Solo muestra el mensaje, no devuelve nada.
 
         // Tu código aquí ↓
-          tarea("estudiar", 1);
+        tarea("estudiar", 1);
         // ================================
         // EJERCICIO 5: Estado de tareas
         // ================================
@@ -111,9 +111,11 @@ public class GestorTareas {
         System.out.println("es " + horas + " horas " + tiemporestante + " minutos");
 
     }
-    public static void tarea(String tarea, int prioridad){
-         String a = tarea;
-         int b = prioridad;
-         System.out.println("la tarea " + a +  " tiene una prioridad de " + b );
+     //ejercicio 4// 
+     
+    public static void tarea(String tarea, int prioridad) {
+        String a = tarea;
+        int b = prioridad;
+        System.out.println("la tarea " + a + " tiene una prioridad de " + b);
     }
 }
